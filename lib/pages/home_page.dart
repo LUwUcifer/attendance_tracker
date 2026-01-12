@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import '../widgets/homepage_widgets/uni_lectures.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SearchBar(),
-        UniLectures()
-      ],
+    return Container(
+      color: Colors.grey,
+      child: Column(
+        children: [
+          SizedBox(height: 20,),
+          SearchBar(),
+          SizedBox(height: 20,),
+          UniLectures()
+        ],
+      ),
     );
   }
 }
