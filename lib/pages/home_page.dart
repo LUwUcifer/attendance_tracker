@@ -1,4 +1,5 @@
 import 'package:attendance_tracker/models/attendance_card.dart';
+import 'package:attendance_tracker/widgets/homepage_widgets/add_lectures.dart';
 import 'package:flutter/material.dart';
 import '../widgets/homepage_widgets/uni_lectures.dart';
 
@@ -35,10 +36,7 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         children: [
           SizedBox(height: 20,),
-          ElevatedButton(onPressed: () {
-            _addNewSubject('OOPs', 'Bhatia', 0);
-          },
-              child: Text('PRESS')),
+          AddLectures(addSubject: _addNewSubject),
           SizedBox(height: 20,),
           UniLectures(atCard: _atCard,)
         ],
