@@ -27,7 +27,7 @@ class AddLectures extends StatelessWidget {
                 addSubject(
                   subController.text,
                   profController.text,
-                  0.0
+                  20.0
                 );
               },
               child: Text('PRESS')

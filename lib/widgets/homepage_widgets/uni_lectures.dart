@@ -25,7 +25,21 @@ class UniLectures extends StatelessWidget {
                     Text(at.profName)
                   ],
                 ),
-                Text('${at.atPercent}')
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    CircularProgressIndicator(
+                      value: at.atPercent/100,
+                    ),
+                    Text(
+                        style: TextStyle(
+                          fontSize: 10
+                        ),
+                        "${at.atPercent}%"
+                    )
+                  ],
+                )
+
               ],
             ),
           ),
