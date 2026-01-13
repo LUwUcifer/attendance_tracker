@@ -1,4 +1,4 @@
-import 'package:attendance_tracker/widgets/custom_widgets/attendance_card.dart';
+import 'package:attendance_tracker/models/attendance_card.dart';
 import 'package:flutter/material.dart';
 
 class UniLectures extends StatelessWidget {

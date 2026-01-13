@@ -1,4 +1,4 @@
-import 'package:attendance_tracker/widgets/custom_widgets/attendance_card.dart';
+import 'package:attendance_tracker/models/attendance_card.dart';
 import 'package:flutter/material.dart';
 import '../widgets/homepage_widgets/uni_lectures.dart';
 
@@ -35,7 +35,6 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         children: [
           SizedBox(height: 20,),
-          SearchBar(),
           ElevatedButton(onPressed: () {
             _addNewSubject('OOPs', 'Bhatia', 0);
           },
