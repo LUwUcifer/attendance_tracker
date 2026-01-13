@@ -1,19 +1,10 @@
 import 'package:attendance_tracker/widgets/custom_widgets/attendance_card.dart';
 import 'package:flutter/material.dart';
 
-class UniLectures extends StatefulWidget {
-  const UniLectures({super.key});
+class UniLectures extends StatelessWidget {
 
-  @override
-  State<UniLectures> createState() => _UniLecturesState();
-}
-
-class _UniLecturesState extends State<UniLectures> {
-
-  final List<AttendanceCard> atCard = [
-    AttendanceCard(lectureName: 'Maths', profName: 'Diddy', atPercent: 20),
-    AttendanceCard(lectureName: 'Data Structure', profName: 'Samriya', atPercent: 100)
-  ];
+  final List<AttendanceCard> atCard;
+  const UniLectures({super.key, required this.atCard});
 
   @override
   Widget build(BuildContext context) {
